@@ -24,12 +24,13 @@
 
 <script type="text/javascript">
     const signIn = new OktaSignIn({
-        baseUrl: 'https://dev-960686.oktapreview.com',
+        baseUrl: 'https://Your-OktaDomain.com',
         customButtons: [{title: 'Login With Microsoft',
            className: 'loginWithGoogle',
            click: function() {
-              var idpIdField = $("#hiddenIdPIdField");
-               idpIdField.val('0oah6pxpf3N5j8R8v0h7');
+               var idpIdField = $("#hiddenIdPIdField");
+               //please add the unique id of the identity provider from Okta Identity provider section
+               idpIdField.val('idp id from the social identity provider ');
               var theForm = idpIdField.parent();
               theForm.submit();
            }
